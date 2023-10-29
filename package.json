@@ -1,0 +1,22 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://www.github.com/sumandey07/TodoApp",
+  "author": "Suman Kumar Dey",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./backend/server.js"
+  },
+  "private": true,
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.2.0",
+    "mongoose": "^7.6.3",
+    "nodemon": "^3.0.1"
+  }
+}
