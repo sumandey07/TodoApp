@@ -1,7 +1,5 @@
 export const textVariants = {
-  defaults: {
-    fontFamily: "Regular",
-  },
+  defaults: {},
   textXs: {
     fontSize: 12,
     lineHeight: 16,
