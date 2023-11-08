@@ -19,7 +19,6 @@ app.get("/new", (req, res) => {
 app.use("/users", userRoutes);
 app.use("/categories", categoryRoutes);
 app.use("/tasks", taskRoutes);
-// app.use("/items", itemRoutes);
 
 app.listen(1340, () => {
   console.log(`Server is running on port ${PORT}.`);

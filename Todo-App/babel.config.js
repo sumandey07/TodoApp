@@ -10,8 +10,10 @@ module.exports = function (api) {
             "@": "./src",
             "@components": "./src/components",
             "@config": "./src/config",
+            "@store": "./src/store",
             "@screens": "./src/screens",
             "@utils": "./src/utils",
+            "@services": "./src/services",
             "@assets": "./src/assets",
             "@hooks": "./src/hooks",
             "@context": "./src/context",
@@ -19,6 +21,7 @@ module.exports = function (api) {
           },
         },
       ],
+      "react-native-reanimated/plugin",
     ],
   };
 };

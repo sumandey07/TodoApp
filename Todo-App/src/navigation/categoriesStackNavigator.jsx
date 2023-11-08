@@ -1,37 +1,37 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
-import WelcomeScreen from "@screens/welcomeScreen";
-import SignInScreen from "@screens/signInScreen";
-import SignUpScreen from "@screens/signUpScreen";
+import CategoriesScreen from "@screens/categoriesScreen";
+import CategoryScreen from "@screens/categoryScreen";
+import CreateCategoryScreen from "@screens/createCategoryScreen";
 
 const Stack = createNativeStackNavigator();
 
-const AuthStackNavigator = () => {
+const CategoriesStackNavigator = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Welcome"
+        name="Categories"
         options={{
           headerShown: false,
         }}
-        component={WelcomeScreen}
+        component={CategoriesScreen}
       />
       <Stack.Screen
-        name="SignIn"
+        name="Category"
         options={{
           headerShown: false,
         }}
-        component={SignInScreen}
+        component={CategoryScreen}
       />
       <Stack.Screen
-        name="SignUp"
+        name="CreateCategory"
+        component={CreateCategoryScreen}
         options={{
           headerShown: false,
         }}
-        component={SignUpScreen}
       />
     </Stack.Navigator>
   );
 };
 
-export default AuthStackNavigator;
+export default CategoriesStackNavigator;
